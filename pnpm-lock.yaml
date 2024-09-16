@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@clerk/nextjs':
-        specifier: 5.5.3-snapshot.v525ef29
-        version: 5.5.3-snapshot.v525ef29(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.5.3
+        version: 5.5.3(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.11
         version: 14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -52,27 +52,27 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@clerk/backend@1.12.0-snapshot.v525ef29':
-    resolution: {integrity: sha512-3OyFAgr7rEgQvwMLhN2TfZtl+YVhTH4+iYFoZld0imcFrJs55DZj/QAnp+NYZ4OaD5Gxm5/t8NbKqqChe0qTUA==}
+  '@clerk/backend@1.12.0':
+    resolution: {integrity: sha512-x6xjhqqtRJNeqv0fPprDFLdCXvFXKYG+bHlvmSfCzsjmPLMPqozomETvwQm/ILNvM3sz2YunfOeam7cwFy0kdw==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/clerk-react@5.9.0-snapshot.v525ef29':
-    resolution: {integrity: sha512-GN8h+nTinSytCNco5judF5N3S/ju6kt7e5rEOkF8bp3RLWwuIGIvnjxt/PnM8c6sv8+/t549+/uVgpctD7u4yA==}
+  '@clerk/clerk-react@5.9.0':
+    resolution: {integrity: sha512-eiLe+9dfflpEf9tOrqeVwEiku/Xjjzto8+emc3EVIi0SW+I43FqVXkUkf/00wLX77EsLZe9F+TzPyKo5XCuspg==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: '>=18 || >=19.0.0-beta'
       react-dom: '>=18 || >=19.0.0-beta'
 
-  '@clerk/nextjs@5.5.3-snapshot.v525ef29':
-    resolution: {integrity: sha512-Z1vbEQ3dj5pg+s6TQE8gpSd6gxTX+O8jw66Yg2WCzyH1r45J08CLmsaCDeECX3aYHQjFhMFoxiHr6qQzyFWcEg==}
+  '@clerk/nextjs@5.5.3':
+    resolution: {integrity: sha512-Xn4tAkjU4eZWJ5tZt7J7iLfElbi3PqdLgwfCuO86VSguUMyXRACaU0CJ2CD/xHAK8vKBk9/K6cLzCQIPrxZ14A==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       next: ^13.5.4 || ^14.0.3 || >=15.0.0-rc
       react: '>=18 || >=19.0.0-beta'
       react-dom: '>=18 || >=19.0.0-beta'
 
-  '@clerk/shared@2.8.0-snapshot.v525ef29':
-    resolution: {integrity: sha512-qwE7LtTlXWJlj3XAzvDvwt1OxAJ33rkCa93SoTF0wZDJ7GJdAE4YXdYzh2oYnfxQkLBe+SFabJ3ow0YcroT4hQ==}
+  '@clerk/shared@2.8.0':
+    resolution: {integrity: sha512-AWbOAzeHQ9P7x5atE3duSTfNWGq+9Q8TvkF1bW+RrNyRt3PMbw+2twE1K/uHzQXGTwO1dGVZp6VsmsbQa4i2qg==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: '>=18 || >=19.0.0-beta'
@@ -83,8 +83,8 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/types@4.21.0-snapshot.v525ef29':
-    resolution: {integrity: sha512-8wNuaBQtvjJDFxZM4j6Vd5fpWPiiibBguLQl5uYNSGld65+YKwNdbGCEzhcmdE6e1tCr6Q4anc04FKHRRuXrPA==}
+  '@clerk/types@4.21.0':
+    resolution: {integrity: sha512-yyPNF4agzub9zXOht9Bk8HG+OkHfLKIpsQuTCiZJszehcKNUqKvJZRxUwdRREBYnBdMl632PKCwbckZsChVxVQ==}
     engines: {node: '>=18.17.0'}
 
   '@eslint-community/eslint-utils@4.4.0':
@@ -1664,10 +1664,10 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@clerk/backend@1.12.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/backend@1.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/shared': 2.8.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.21.0-snapshot.v525ef29
+      '@clerk/shared': 2.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/types': 4.21.0
       cookie: 0.5.0
       snakecase-keys: 5.4.4
       tslib: 2.4.1
@@ -1675,20 +1675,20 @@ snapshots:
       - react
       - react-dom
 
-  '@clerk/clerk-react@5.9.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/clerk-react@5.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/shared': 2.8.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.21.0-snapshot.v525ef29
+      '@clerk/shared': 2.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/types': 4.21.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.4.1
 
-  '@clerk/nextjs@5.5.3-snapshot.v525ef29(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/nextjs@5.5.3(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/backend': 1.12.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/clerk-react': 5.9.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/shared': 2.8.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.21.0-snapshot.v525ef29
+      '@clerk/backend': 1.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/clerk-react': 5.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/shared': 2.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/types': 4.21.0
       crypto-js: 4.2.0
       next: 14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -1696,9 +1696,9 @@ snapshots:
       server-only: 0.0.1
       tslib: 2.4.1
 
-  '@clerk/shared@2.8.0-snapshot.v525ef29(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/shared@2.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/types': 4.21.0-snapshot.v525ef29
+      '@clerk/types': 4.21.0
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
       std-env: 3.7.0
@@ -1707,7 +1707,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@clerk/types@4.21.0-snapshot.v525ef29':
+  '@clerk/types@4.21.0':
     dependencies:
       csstype: 3.1.1
 
@@ -2219,7 +2219,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.7.0
 
   eastasianwidth@0.2.0: {}
 
@@ -2915,7 +2915,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.7.0
 
   lru-cache@10.4.3: {}
 
@@ -2984,7 +2984,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.4.1
+      tslib: 2.7.0
 
   normalize-path@3.0.0: {}
 
@@ -3262,7 +3262,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.7.0
 
   snakecase-keys@5.4.4:
     dependencies:
