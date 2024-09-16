@@ -6,7 +6,7 @@ import {
   UserButton,
 } from '@clerk/nextjs';
 import './globals.css';
-import { headers } from 'next/headers';
+// import { headers } from 'next/headers';
 
 export default function RootLayout({
   children,
