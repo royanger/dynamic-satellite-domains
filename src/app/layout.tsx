@@ -14,14 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // get the current host/domain
-  const headersList = headers()
-  const host = headersList.get('x-forwarded-host')
+  // const headersList = headers()
+  // const host = headersList.get('x-forwarded-host')
 
   // set the sign-in and sign-up URLs
   // const primarySignInUrl = 'http://localhost:3000/sign-in'
   // const primarySignUpUrl = 'https://localhost:3000/sign-up'
 
-  const satellites = ['http://royanger.work']
+  // const satellites = ['http://royanger.work']
 
   return (
     <ClerkProvider
