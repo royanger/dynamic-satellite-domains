@@ -25,9 +25,9 @@ export default function RootLayout({
 
   return (
     <ClerkProvider
-      isSatellite={host !== process.env.NEXT_PUBLIC_ROOT_DOMAIN}
-      domain={host!}
-      allowedRedirectOrigins={satellites}
+    // isSatellite={host !== process.env.NEXT_PUBLIC_ROOT_DOMAIN}
+    // domain={host!}
+    // allowedRedirectOrigins={satellites}
     >
       <html lang='en'>
         <body>

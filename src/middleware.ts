@@ -11,7 +11,7 @@ export default clerkMiddleware((auth, req: NextRequest) => {
   // (req: NextRequest) => {
   // console.log('HOST', req.nextUrl.host)
   // return ({
-  isSatellite: true,
+  // isSatellite: true,
   // signInUrl: 'https://primary.dev/sign-in',
   // Or, in development:
   // signInUrl: 'http://localhost:3000/sign-in',
@@ -19,7 +19,7 @@ export default clerkMiddleware((auth, req: NextRequest) => {
   // domain: 'https://primary.dev',
   // Or, in development:
 
-  domain: "https://royanger.info",
+  // domain: "https://royanger.info",
   // })
 });
 
