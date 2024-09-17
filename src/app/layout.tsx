@@ -21,7 +21,7 @@ export default function RootLayout({
   // const primarySignInUrl = 'http://localhost:3000/sign-in'
   // const primarySignUpUrl = 'https://localhost:3000/sign-up'
 
-  const satellites = ['http://royanger.work']
+  const satellites = ['https://royanger.work']
   console.log('layout isSat', host !== process.env.NEXT_PUBLIC_ROOT_DOMAIN)
   return (
     <ClerkProvider
