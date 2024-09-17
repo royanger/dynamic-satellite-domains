@@ -3,16 +3,20 @@ import { NextRequest } from 'next/server';
 
 const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)', '/']);
 
-export default clerkMiddleware((auth, req: NextRequest) => {
-  if (!isPublicRoute(req)) {
-    auth().protect();
-  }
-  // })
-  // }, {
+export default clerkMiddleware(
+  (auth, req: NextRequest) => {
+    console.log('middleware')
+    if (!isPublicRoute(req)) {
+      auth().protect();
+    }
+    // })
+    // }, 
+  },
   (req: NextRequest) => {
     console.log('HOST', req.nextUrl.host)
+    console.log('middleware isSat', req.nextUrl.host !== process.env.NEXT_PUBLIC_ROOT_DOMAIN)
     return ({
-      isSatellite: req.nextUrl.host !== 'royanger.info',
+      isSatellite: req.nextUrl.host !== process.env.NEXT_PUBLIC_ROOT_DOMAIN,
       domain: req.nextUrl.host
       // signInUrl: 'https://primary.dev/sign-in',
       // Or, in development:
@@ -23,8 +27,7 @@ export default clerkMiddleware((auth, req: NextRequest) => {
 
       // domain: "https://royanger.info",
     })
-  }
-})
+  })
 
 export const config = {
   matcher: [
