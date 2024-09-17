@@ -7,22 +7,24 @@ export default clerkMiddleware((auth, req: NextRequest) => {
   if (!isPublicRoute(req)) {
     auth().protect();
   }
-})
-// }, {
-// (req: NextRequest) => {
-// console.log('HOST', req.nextUrl.host)
-// return ({
-// isSatellite: true,
-// signInUrl: 'https://primary.dev/sign-in',
-// Or, in development:
-// signInUrl: 'http://localhost:3000/sign-in',
-// signUpUrl: 'http://localhost:3000/sign-up',
-// domain: 'https://primary.dev',
-// Or, in development:
+  // })
+  // }, {
+  (req: NextRequest) => {
+    console.log('HOST', req.nextUrl.host)
+    return ({
+      isSatellite: req.nextUrl.host !== 'royanger.info',
+      domain: req.nextUrl.host
+      // signInUrl: 'https://primary.dev/sign-in',
+      // Or, in development:
+      // signInUrl: 'http://localhost:3000/sign-in',
+      // signUpUrl: 'http://localhost:3000/sign-up',
+      // domain: 'https://primary.dev',
+      // Or, in development:
 
-// domain: "https://royanger.info",
-// })
-// });
+      // domain: "https://royanger.info",
+    })
+  }
+})
 
 export const config = {
   matcher: [
